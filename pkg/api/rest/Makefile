@@ -1,0 +1,2 @@
+swag:
+	cd ../../../ && $(MAKE) swag
