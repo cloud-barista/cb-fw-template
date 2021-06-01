@@ -3,14 +3,14 @@ package main
 import (
 	"os"
 
-	"github.com/cloud-barista/cb-fw-template/pkg/apiserver"
+	rest_api "github.com/cloud-barista/cb-fw-template/pkg/rest-api"
 )
 
 func main() {
 
-	apiserver.SPIDER_URL = os.Getenv("SPIDER_URL")
+	rest_api.SPIDER_URL = os.Getenv("SPIDER_URL")
 
 	// Run API Server
-	apiserver.ApiServer()
+	rest_api.ApiServer()
 
 }

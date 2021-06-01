@@ -5,6 +5,7 @@ import (
 	"fmt"
 	"net/http"
 
+	"github.com/cloud-barista/cb-fw-template/pkg/core"
 	"github.com/labstack/echo/v4"
 )
 
@@ -17,7 +18,7 @@ func RestGetObject(c echo.Context) error {
 
 	content := map[string]string{"message": "RestGetObject called."}
 
-	PrintJsonPretty(content)
+	core.PrintJsonPretty(content)
 
 	return c.JSON(http.StatusOK, &content)
 }
@@ -26,7 +27,7 @@ func RestGetAllObjects(c echo.Context) error {
 
 	content := map[string]string{"message": "RestGetAllObjects called."}
 
-	PrintJsonPretty(content)
+	core.PrintJsonPretty(content)
 
 	return c.JSON(http.StatusOK, &content)
 }
@@ -35,7 +36,7 @@ func RestPostObject(c echo.Context) error {
 
 	content := map[string]string{"message": "RestPostObject called."}
 
-	PrintJsonPretty(content)
+	core.PrintJsonPretty(content)
 
 	return c.JSON(http.StatusOK, &content)
 }
@@ -44,7 +45,7 @@ func RestDeleteObject(c echo.Context) error {
 
 	content := map[string]string{"message": "RestDeleteObject called."}
 
-	PrintJsonPretty(content)
+	core.PrintJsonPretty(content)
 
 	return c.JSON(http.StatusOK, &content)
 }
