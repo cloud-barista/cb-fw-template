@@ -1,10 +1,10 @@
 // Proof of Concepts for the Cloud-Barista Multi-Cloud Project.
 //      * Cloud-Barista: https://github.com/cloud-barista
 
-package apiserver
+package rest_api
 
 import (
-	"github.com/cloud-barista/cb-fw-template/pkg/common"
+	"github.com/cloud-barista/cb-fw-template/pkg/rest-api/common"
 
 	//"os"
 
